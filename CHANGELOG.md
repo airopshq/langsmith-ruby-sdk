@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+- Update gem metadata and changelog links after moving the repository to the AirOps GitHub organization.
+
 ### Fixed
 
 - Mirror user-supplied `metadata` (from `Langsmith.trace(metadata:)` / `Run#add_metadata`) into `extra.metadata` during serialization. The LangSmith UI Metadata panel and Threads detection read run metadata from `extra.metadata` (Python-SDK convention); previously, user metadata was only emitted at top-level `metadata`, so it didn't appear in the UI and thread-grouping keys (`session_id` / `thread_id` / `conversation_id`) weren't detected. Top-level `metadata` is still emitted for backwards compatibility, and keys set by `set_model` / `set_token_usage` / `set_streaming_metrics` continue to win on conflict.
@@ -105,12 +109,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `prompt` - Prompt template rendering
 - `parser` - Output parsing operations
 
-[Unreleased]: https://github.com/felipekb/langsmith-ruby-sdk/compare/v0.4.0...HEAD
-[0.4.0]: https://github.com/felipekb/langsmith-ruby-sdk/compare/v0.3.2...v0.4.0
-[0.3.2]: https://github.com/felipekb/langsmith-ruby-sdk/compare/v0.3.1...v0.3.2
-[0.3.1]: https://github.com/felipekb/langsmith-ruby-sdk/compare/v0.3.0...v0.3.1
-[0.3.0]: https://github.com/felipekb/langsmith-ruby-sdk/compare/v0.2.0...v0.3.0
-[0.2.0]: https://github.com/felipekb/langsmith-ruby-sdk/compare/v0.1.1...v0.2.0
-[0.1.1]: https://github.com/felipekb/langsmith-ruby-sdk/compare/v0.1.0...v0.1.1
-[0.1.0]: https://github.com/felipekb/langsmith-ruby-sdk/releases/tag/v0.1.0
+[Unreleased]: https://github.com/airopshq/langsmith-ruby-sdk/compare/v0.4.0...HEAD
+[0.4.0]: https://github.com/airopshq/langsmith-ruby-sdk/compare/v0.3.2...v0.4.0
+[0.3.2]: https://github.com/airopshq/langsmith-ruby-sdk/compare/v0.3.1...v0.3.2
+[0.3.1]: https://github.com/airopshq/langsmith-ruby-sdk/compare/v0.3.0...v0.3.1
+[0.3.0]: https://github.com/airopshq/langsmith-ruby-sdk/compare/v0.2.0...v0.3.0
+[0.2.0]: https://github.com/airopshq/langsmith-ruby-sdk/compare/v0.1.1...v0.2.0
+[0.1.1]: https://github.com/airopshq/langsmith-ruby-sdk/compare/v0.1.0...v0.1.1
+[0.1.0]: https://github.com/airopshq/langsmith-ruby-sdk/releases/tag/v0.1.0
 

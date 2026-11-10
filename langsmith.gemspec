@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
 
   spec.summary = "Ruby SDK for LangSmith tracing and observability"
   spec.description = "A Ruby client for LangSmith, providing tracing and observability for LLM applications"
-  spec.homepage = "https://github.com/felipekb/langsmith-ruby-sdk"
+  spec.homepage = "https://github.com/airopshq/langsmith-ruby-sdk"
   spec.license = "MIT"
   spec.required_ruby_version = ">= 3.1.0"
 
